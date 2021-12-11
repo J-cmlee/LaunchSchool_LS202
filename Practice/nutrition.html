@@ -34,10 +34,10 @@
     h1 {
       font-family: Helvetica;
       font-size: 2.5rem;
-      transform: scaleX(1.1);
+      transform: scaleX(1.15);
       padding: 0;
       margin: 0;
-      margin-left: 30px;
+      margin-left: 40px;
       text-shadow: 0px 3px, 3px 0px, 3px 3px;
     }
 
@@ -62,8 +62,6 @@
 
     dt {
       display: inline-block;
-      /* font-weight: bold;
-      text-shadow: 0px 1px, 1px 0px, 1px 1px; */
     }
 
     dd {
@@ -77,17 +75,31 @@
       border-collapse: collapse;
       width: 100%;
       margin: 0;
+      margin-top: 10px;
     }
 
     th {
       text-align: left;
-      border-bottom: 1px solid;
+      border-bottom: 2px solid;
       padding: 1px 0px;
+      font-weight: normal;
     }
 
     td {
+      text-align: right;
+      border-bottom: 2px solid;
+    }
+
+    table:nth-of-type(2) th {
       text-align: left;
-      border-bottom: 1px solid;
+      font-weight: normal;
+      font-size: 0.8rem;
+    }
+
+    table:nth-of-type(2) td {
+      text-align: left;
+      font-size: 0.8rem;
+      border: none;
     }
 
     .indent {
@@ -126,7 +138,7 @@
             <dd>8g</dd>
           </dl>
         </th>
-        <td style="text-align: right;"><strong>12</strong>%</td>
+        <td><strong>12</strong>%</td>
       </tr>
       <tr>
         <td class="indent"></td>
@@ -136,7 +148,7 @@
             <dd>1g</dd>
           </dl>
         </th>
-        <th style="text-align: right;">5%</th>
+        <td><strong>5</strong>%</td>
       </tr>
       <tr>
         <td class="indent"></td>
@@ -146,16 +158,91 @@
             <dd>0g</dd>
           </dl>
         </th>
-        <th style="text-align: right;"></th>
+        <td></td>
       </tr>
       <tr>
         <th colspan="2">
           <dl>
-            <dt>Cholestrerol</dt>
+            <dt><strong>Cholestrerol</strong></dt>
             <dd>0mg</dd>
           </dl>
         </th>
-        <th style="text-align: right;">0%</th>
+        <td><strong>0</strong>%</td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <dl>
+            <dt><strong>Sodium</strong></dt>
+            <dd>160mg</dd>
+          </dl>
+        </th>
+        <td><strong>7</strong>%</td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <dl>
+            <dt><strong>Total Carbohydrate</strong></dt>
+            <dd>37g</dd>
+          </dl>
+        </th>
+        <td><strong>12</strong>%</td>
+      </tr>
+      <tr>
+        <td class="indent"></td>
+        <th>
+          <dl>
+            <dt class="indented">Dietary Fiber</dt>
+            <dd>4g</dd>
+          </dl>
+        </th>
+        <td><strong>16</strong>%</td>
+      </tr>
+      <tr>
+        <td class="indent"></td>
+        <th>
+          <dl>
+            <dt class="indented">Sugars</dt>
+            <dd>1g</dd>
+          </dl>
+        </th>
+        <td></td>
+      </tr>
+      <tr style="border-bottom: 25px solid;">
+        <th colspan="2">
+          <dl>
+            <dt><strong>Protein</strong></dt>
+            <dd>3g</dd>
+          </dl>
+        </th>
+        <td></td>
+      </tr>
+      <tr>
+        <th colspan="2">Vitamin A</th>
+        <td>10%</td>
+      </tr>
+      <tr>
+        <th colspan="2">Vitamin C</th>
+        <td>8%</td>
+      </tr>
+      <tr>
+        <th colspan="2">Calcium</th>
+        <td>20%</td>
+      </tr>
+      <tr>
+        <th colspan="2">Iron</th>
+        <td>45%</td>
+      </tr>
+    </table>
+    <table>
+      <thead>
+        <tr>
+          <td colspan="5" style="padding-left: 0.6em;
+          text-indent:-0.6em;">* Percent Daily Values are based on a 2,000 calorie diet. Your daily value may be higher
+            or lower depending on your calorie needs.</td>
+        </tr>
+      </thead>
+      <tr>
+        
       </tr>
     </table>
   </article>
