@@ -53,8 +53,17 @@ dl {
   padding: 5px 0;
 }
 
+dl:nth-of-type(2) {
+  float: right;
+}
+
 dt {
   display: inline-block;
+}
+
+dt:nth-of-type(2) {
+  font-weight: normal; 
+  text-shadow: none;
 }
 
 dd {
@@ -99,4 +108,13 @@ table:nth-of-type(2) td {
 .indent {
   width: 30px;
   border: none;
+}
+
+#vitamin_separator {
+  border-bottom: 25px solid;
+}
+
+#warning_note {
+  padding-left: 0.6em;
+  text-indent:-0.6em;
 }
