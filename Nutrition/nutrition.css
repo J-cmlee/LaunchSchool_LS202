@@ -118,3 +118,7 @@ table:nth-of-type(2) td {
   padding-left: 0.6em;
   text-indent:-0.6em;
 }
+
+#bottom_table_header {
+  border-bottom: 2px solid;
+}
