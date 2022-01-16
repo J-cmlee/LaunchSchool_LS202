@@ -189,49 +189,56 @@
 
     <p>
       Elements that follow a floated element wrap around it. However, we don't want this behavior above, so we applied
-      clear:both` property to the third `div`. There are two other values for `clear`, `left` and `right`, but we
-      typically want `both.
+      clear:both` property to the third `div`. There are two other values for <code>clear</code>, <code>left</code> and
+      <code>right</code>, but we typically want <code>both</code>.
     </p>
     <p>
-      There are other ways to clear floats. One technique is the clearfix method:
+      There are other ways to clear floats. One technique is the <strong>clearfix</strong> method:
     </p>
-    
+    <code>
+        elementName::after {
+          content: " ";
+          display:block;
+          clear: both;
+        }
+    </code>
+    <p>
+      Here we append the <code>::after</code> pseudo-element to the parent element's selector.
+    </p>
 
-    elementName::after {
-    content: " ";
-    display:block;
-    clear: both;
-    }
+    <h1>Positioning</h1>
+    <p>
+      We sometimes want to position elements at specific locations on the page. The normal page flow and floats can't do
+      this with the precision we often want. We can use CSS positioning in this case. There are four positioning types:
+    </p>
+    <ul>
+      <li>Static</li>
+      <li>Fixed</li>
+      <li>Relative</li>
+      <li>Absolute</li>
+    </ul>
 
-    Here we append the ::after pseudo-element to the parent element's selector.
+    <h2>Static Positioning</h2>
+    <p>
+      The element renders at its normal position on the page. That is, the browser uses the standard page flow. All
+      elements default tom static positioning.
+    </p>
 
-    Positioning
+    <h2>Fixed Positioning</h2>
+    <p>
+      Lets you place an element at a fixed position in the browser window; it will remain in place even when you scroll
+      the page. You need the top`, `bottom`, `right`, and `left properties to position the element.
+    </p>
+    <p>
+      The browser removes elements with fixed positioning from the page flow. It does not leave a gap in the location
+      where the browser would have positioned it otherwise.
+    </p>
+    <p>
+      The blue box on the bottom-left corner of the page is a fixed position element.
+    </p>
 
-    We sometimes want to position elements at specific locations on the page. The normal page flow and floats can't do
-    this with the precision we often want. We can use CSS positioning in this case. There are four positioning types:
 
-    Static
-    Fixed
-    Relative
-    Absolute
 
-    Static Positioning
-
-    The element renders at its normal position on the page. That is, the browser uses the standard page flow. All
-    elements
-    default tom static positioning.
-
-    Fixed Positioning
-
-    Lets you place an element at a fixed position in the browser window; it will remain in place even when you scroll
-    the
-    page. You need the top`, `bottom`, `right`, and `left properties to position the element.
-
-    The browser removes elements with fixed positioning from the page flow. It does not leave a gap in the location
-    where
-    the browser would have positioned it otherwise.
-
-    The blue box on the bottom-left corner of the page is a fixed position element.
 
     <div id="fixed">I use fixed positioning.</div>
 
@@ -244,21 +251,26 @@
 
     <div id="rel-box">I use relative positioning.</div>
 
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cumque repellat sapiente vitae nihil debitis
-    accusamus,
-    odit, tempore id reiciendis consequatur necessitatibus veritatis, distinctio vel, cum repellendus numquam blanditiis
-    perferendis?
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cumque repellat sapiente vitae nihil debitis
+      accusamus, odit, tempore id reiciendis consequatur necessitatibus veritatis, distinctio vel, cum repellendus
+      numquam blanditiis
+      perferendis?
+    </p>
 
-    Absolute Positioning
+    <h2>Absolute Positioning</h2>
 
-    Absolute positioning removes an element from the normal page flow and positions it at an absolute position relative
-    to
-    its parent element. If the parent element is the `&lt;body&gt;`, the position is absolute relative to the complete
-    page.
+    <div>
+      <p>
+        Absolute positioning removes an element from the normal page flow and positions it at an absolute position
+        relative to its parent element. If the parent element is the `&lt;body&gt;`, the position is absolute relative
+        to the complete
+        page.
 
-    The green box shows uses absolute positioning.
-
-    <div id="abs-box">I use absolute positioning.</div>
+        The green box shows uses absolute positioning.
+      </p>
+      <div id="abs-box">I use absolute positioning.</div>
+    </div>
   </article>
 </body>
 
