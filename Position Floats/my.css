@@ -1,0 +1,98 @@
+body {
+  background-color: white;
+  color: #545459;
+  font: normal 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+article {
+  border: 2px solid black;
+  margin: 0 auto;
+  padding: 20px;
+  width: 1000px;
+}
+
+h1 {
+  size: 24px;
+  color: #ce4a4a;
+  font-weight: bold;
+}
+
+h2 {
+  size: 20px;
+  color: #ce4a4a;
+  font-weight: bold;
+}
+
+p {
+  line-height: 35px;
+  margin-bottom: 25px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.exblock {
+  border: 2px dashed #555;
+  margin: 45px;
+  padding: 30px;
+  width: 650px;
+}
+
+.inline-margin a {
+  margin: 30px;
+}
+
+.inline-padding a {
+  background-color: green;
+  color: white;
+  padding: 30px;
+}
+
+.inline-float {
+  overflow: hidden;
+}
+
+.inline-float a {
+  background-color: green;
+  border: 3px solid darkgreen;
+  color: white;
+  margin: 15px;
+  padding: 25px;
+  text-align: center;
+  width: 120px;
+  float: left;
+}
+
+#div-ex1 {
+  background-color: dodgerblue;
+  color: white;
+}
+
+#fixed {
+  position: fixed;
+  background-color: dodgerblue;
+  border-radius: 10px;
+  bottom: 50px;
+  color: white;
+  padding: 25px 35px;
+  position: fixed;
+  text-align: center;
+  width: 225px;
+}
+
+#rel-box {
+  position: relative;
+  background-color: tomato;
+  border-radius: 10px;
+  bottom: -45px;
+  color: white;
+  margin-bottom: 30px;
+  padding: 25px 35px;
+  right: 90px;
+  text-align: center;
+  width: 325px;
+}
