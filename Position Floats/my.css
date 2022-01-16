@@ -42,6 +42,11 @@ a {
   width: 650px;
 }
 
+.divider {
+  padding-bottom: 35px;
+  border-bottom: 2px dashed #555;
+}
+
 .inline-margin a {
   margin: 30px;
 }
@@ -67,9 +72,134 @@ a {
   float: left;
 }
 
+div {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: block;
+  overflow: hidden;
+}
+
+.block-a {
+  background-color: dodgerblue;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.block-b {
+  background-color: dodgerblue;
+  color: white;
+  margin: 20px 8px 25px;
+  padding: 20px 30px;
+  display: inline-block;
+  text-align: center;
+  width: 180px;
+}
+
+.centered {
+  text-align: center;
+}
+
 #div-ex1 {
   background-color: dodgerblue;
   color: white;
+}
+
+#div-ex2 {
+  background-color: green;
+  color: white;
+  height: 60px;
+  padding: 20px;
+  margin: 20px;
+}
+
+#div-ex3 {
+  background-color: tomato;
+  color: white;
+  width: 90px;
+}
+
+#div-ex4 {
+  background-color: pink;
+  color: white;
+  width: 180px;
+  height: 120px;
+  padding: 20px;
+  margin: 20px;
+}
+
+#div-ex5 {
+  background-color: dodgerblue;
+  color: white;
+  float: left;
+  border: 1px solid red;
+}
+
+#div-ex6 {
+  background-color: tomato;
+  color: white;
+  float: right;
+  border: 1px solid red;
+}
+
+#div-ex7 {
+  background-color: tomato;
+  color: white;
+  float: left;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  width: 40%;
+  margin-bottom: 25px;
+}
+
+#div-ex8 {
+  background-color: dodgerblue;
+  color: white;
+  float: right;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  width: 50%;
+}
+
+.div-fl {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+#fl-ex1 {
+  background-color: tomato;
+  float: left;
+  height: 100px;
+  width: 450px;
+  line-height: 100px;
+  display: block;
+}
+
+#fl-ex2 {
+  background-color: dodgerblue;
+  float: left;
+  height: 100px;
+  width: 505px;
+  line-height: 100px;
+  display: block;
+}
+
+#fl-ex3 {
+  background-color: seagreen;
+  float: left;
+  height: 50px;
+  width: 955px;
+  line-height: 50px;
+  display: block;
+  margin-bottom: 35px;
 }
 
 #fixed {

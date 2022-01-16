@@ -79,96 +79,123 @@
     <p>
       <code>div</code> elements are block-level.
     </p>
+
+    <div id="div-ex1">This <code>div</code> has no explicit width or height.</div>
+
+    <p>
+      Without an explicit width or height, the box fills the entire width and uses as much height as it needs to fit the
+      content.
+    </p>
+
+    <div id="div-ex2">
+      This div has no explicit width but a height of 60px; it also has both padding and margins of 20px on all sides.
+    </div>
+
+    <p>
+      With an explicit height of 60px plus margins and padding, the box still fills the entire width (including the
+      padding and margins), but now requires the requested height.
+    </p>
+
+    <div id="div-ex3">
+      This div has a width of 90px and no explicit height.
+    </div>
+
+    <p>
+      With an explicit width of 90px, the box collapses down to 90px width but expands the height to ensure the text
+      still
+      fits.
+    </p>
+
+    <div id="div-ex4">
+      This div has a width of 180px and a height of 120px; it also has both padding and margins of 20px on all sides.
+    </div>
+
+    <p>
+      With an explicit width of 180px and height of 120px, the box takes on the requested dimensions. However, the
+      content can overflow the box as it does here.
+    </p>
+
+    <h1>Floating Block Elements</h1>
+    <h2>Floating block elements with no width or height</h2>
+
+    <div class="wrapper">
+      <div id="div-ex5">Box - 1 - Floated Left</div>
+      <div id="div-ex6">Box - 2 - Floated Right</div>
+    </div>
+
+    <p>
+      Floated block-level elements that don't have a width collapse down to the width required by the content. Thus,
+      multiple floated blocks can fit on the same line as shown above where we float one item left and the other right.
+    </p>
+
+    <h2>Floating block elements with width and height set.</h2>
+
+    <div class="wrapper">
+      <div id="div-ex7">Box - 1 - Floated Left</div>
+      <div id="div-ex8">Box - 2 - Floated Right</div>
+    </div>
+    <p>
+      When you specify the widths on floated block-level elements, the browser will observe the widths. In the above
+      example, our blocks have widths of 40% and 50%.
+    </p>
+
+    <h2>Can we change an inline element into a block element?</h2>
+    <p>
+      Let's use the anchor tag as an example.
+    </p>
+    <div>
+      <a href="#" class="block-a">Home</a>
+      <a href="#" class="block-a">Portfolio</a>
+      <a href="#" class="block-a">Contact</a>
+    </div>
+    <p>
+      Yes, we can change a block element to an inline and vice versa. You can change the display property regardless of
+      the previous value.
+    </p>
+
+    <h1>Inline-Block Elements</h1>
+    <p>
+      Inline-block elements are inline elements that take on most block element properties, such as width and height.
+    </p>
+
+    <h2>Example</h2>
+    <p>
+      Let's use `inline-block` to create a navigation bar:
+    </p>
+    <div class="centered">
+      <a href="#" class="block-b">Home</a>
+      <a href="#" class="block-b">Portfolio</a>
+      <a href="#" class="block-b">About</a>
+      <a href="#" class="block-b">Contact</a>
+    </div>
+
+    <p class="divider">
+      We achieved similar results when we floated the anchor elements. It's as though you get two elements in one: you
+      have the flow properties of inline elements combined with most properties of block elements.
+    </p>
+
+    <h1 class="centered">Floats and Positioning Elements</h1>
+
+    <h2>Floats</h2>
+    <p>
+      The browser removes floated elements from the normal flow. Floated elements automatically become block-level
+      elements with change: two or more floated elements can fit on the same line.
+    </p>
+
+    <h2>Example</h2>
+    <div class="div-fl" id="fl-ex1">Box 1</div>
+    <div class="div-fl" id="fl-ex2">Box 2</div>
+    <div class="div-fl" id="fl-ex3">Box 3</div>
+
+    <p>
+      Elements that follow a floated element wrap around it. However, we don't want this behavior above, so we applied
+      clear:both` property to the third `div`. There are two other values for `clear`, `left` and `right`, but we
+      typically want `both.
+    </p>
+    <p>
+      There are other ways to clear floats. One technique is the clearfix method:
+    </p>
     
-    <div id="div-example1"></div>
-    This div has no explicit width or height.
-
-    Without an explicit width or height, the box fills the entire width and uses as much height as it needs to fit the
-    content.
-
-    This div has no explicit width but a height of 60px; it also has both padding and margins of 20px on all sides.
-
-    With an explicit height of 60px plus margins and padding, the box still fills the entire width (including the
-    padding
-    and margins), but now requires the requested height.
-
-    This div has a width of 90px and no explicit height.
-
-    With an explicit width of 90px, the box collapses down to 90px width but expands the height to ensure the text still
-    fits.
-
-    This div has a width of 180px and a height of 120px; it also has both padding and margins of 20px on all sides.
-
-    With an explicit width of 180px and height of 120px, the box takes on the requested dimensions. However, the content
-    can overflow the box as it does here.
-
-    Floating Block Elements
-
-    Floating block elements with no width or height
-
-    Box - 1 - Floated Left
-    Box - 2 - Floated Right
-
-    Floated block-level elements that don't have a width collapse down to the width required by the content. Thus,
-    multiple floated blocks can fit on the same line as shown above where we float one item left and the other right.
-
-    Floating block elements with width and height set.
-
-    Box - 1 - Floated Left
-    Box - 2 - Floated Right
-
-    When you specify the widths on floated block-level elements, the browser will observe the widths. In the above
-    example, our blocks have widths of 40% and 50%.
-
-    Can we change an inline element into a block element?
-
-    Let's use the anchor tag as an example.
-
-    Home
-    About
-    Contact
-
-    Yes, we can change a block element to an inline and vice versa. You can change the display property regardless of
-    the
-    previous value.
-
-    Inline-Block Elements
-
-    Inline-block elements are inline elements that take on most block element properties, such as width and height.
-
-    Example
-
-    Let's use `inline-block` to create a navigation bar:
-
-    Home
-    Portfolio
-    About
-    Contact
-
-    We achieved similar results when we floated the anchor elements. It's as though you get two elements in one: you
-    have
-    the flow properties of inline elements combined with most properties of block elements.
-
-    Floats and Positioning Elements
-
-    Floats
-
-    The browser removes floated elements from the normal flow. Floated elements automatically become block-level
-    elements
-    with change: two or more floated elements can fit on the same line.
-
-    Example
-
-    Box 1
-    Box-2
-    Box-3
-
-    Elements that follow a floated element wrap around it. However, we don't want this behavior above, so we applied
-    clear:both` property to the third `div`. There are two other values for `clear`, `left` and `right`, but we
-    typically
-    want `both.
-
-    There are other ways to clear floats. One technique is the clearfix method:
 
     elementName::after {
     content: " ";
