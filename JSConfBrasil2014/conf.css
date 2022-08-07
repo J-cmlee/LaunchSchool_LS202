@@ -20,5 +20,41 @@ nav li {
   display: inline;
   text-transform: uppercase;
   padding: 10px;
-  margin: 10px;
+}
+
+#banner {
+  color: white;
+  background-color: black;
+  padding: 150px;
+}
+
+.section {
+  border-bottom: 0.5px dotted grey;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+button {
+  color: white;
+  background: #008000;
+  padding: 10px 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 31px;
+}
+
+h3 {
+  font-size: 48px;
+}
+
+main {
+  margin: 50px 0;
 }

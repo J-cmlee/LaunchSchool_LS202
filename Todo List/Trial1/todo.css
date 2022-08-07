@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: white;
+  font: 16px Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: inline;
+  padding-left: 50px;
+}
+
+nav {
+  background-color: #464f77;
+  color: #b2b5c3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  padding-top: 50px;
+
+}
+
+nav ul {
+  padding-bottom: 40px;
+}
+
+nav ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 100px;
+}
+
+nav ul li:hover {
+  background-color: #38405e;
+}
+
+.item1 {
+  display: inline;
+}
+
+.item2 {
+  display: inline;
+  float: right;
+  background-color: #6b7292;
+  text-align: center;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+#nav-title {
+  color: #ffffff;
+  padding-left: none;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 250px;
+  right: 0;
+  bottom: 0;
+
+  -moz-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+#hamburger {
+  display: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input:checked~.portfolio {
+  left: 0;
+}
+
+input:checked~label {
+  left: 0;
+}
+/* Mobile Only */
+
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  /* Show/Hide Nav Bar */
+  #hamburger {
+    display: block;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  #nav {
+    display: none;
+  }
+
+  #nav-toggle:checked+#nav {
+    display: block;
+  }
+
+}

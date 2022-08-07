@@ -1,0 +1,100 @@
+@import url("whitespace-reset.css");
+
+html {
+  background-color: white;
+  font: 16px Helvetica, Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+nav {
+  padding: 50px 10px 50px 0px;
+}
+
+nav h1 {
+  padding-left: 40px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  margin-bottom: 50px;
+}
+
+nav li label {
+  display: block;
+  padding: 10px 5px 10px 70px;
+}
+
+nav input:checked + label {
+  background: #38405e;
+  color: #ffffff;
+}
+
+.sidebar {
+  background-color: #464f77;
+  color: #b2b5c3;
+  width: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.sidebar h1 {
+  color: white;
+}
+
+#list_display {
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 250px;
+  right: 0;
+  bottom: 0;
+
+  -moz-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input:checked~#list_display {
+  left: 0;
+}
+
+input:checked~#hamburger {
+  left: 10px;
+}
+
+#hamburger {
+  z-index: 2;
+  position: absolute;
+  top: 10px;
+  left: 260px;
+
+  -moz-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+  /* Hide for larger screens */
+  display: none;
+}
+
+/* Show hamburger for smaller mobile screens */
+@media only screen and (max-width: 768px) {
+  #hamburger {
+    display: block;
+  }
+}
