@@ -18,14 +18,15 @@ label {
 }
 
 nav {
-  padding: 50px 10px 50px 0px;
+  padding: 100px 10px 50px 0px;
 }
 
-nav h1 {
+nav .title {
   padding-left: 40px;
   height: 26px;
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 nav ul {
@@ -33,13 +34,31 @@ nav ul {
 }
 
 nav li label {
-  display: block;
-  padding: 10px 5px 10px 70px;
+  display: inline-block;
 }
 
-nav input:checked + label {
+nav .row {
+  padding: 10px 20px 10px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list_num {
+  background-color: #6b7292;
+  border-radius: 50%;
+  padding: 3px;
+  min-width: 18px;
+  text-align: center;
+}
+
+nav input:checked + .row {
   background: #38405e;
   color: #ffffff;
+}
+
+nav input:checked + .row + .list_num{
+  background-color: #148fd5;
 }
 
 .sidebar {
@@ -73,18 +92,18 @@ input[type=checkbox] {
 }
 
 input:checked~#list_display {
-  left: 0;
+  left: 250px;
 }
 
 input:checked~#hamburger {
-  left: 10px;
+  left: 280px;
 }
 
 #hamburger {
   z-index: 2;
   position: absolute;
   top: 10px;
-  left: 260px;
+  left: 30px;
 
   -moz-transition: left 0.5s ease;
   transition: left 0.5s ease;
@@ -97,4 +116,128 @@ input:checked~#hamburger {
   #hamburger {
     display: block;
   }
+  #list_display {
+    left: 0px;
+  }
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.completed li {
+  height: 44px;
+}
+
+main {
+  padding: 100px 0 0 30px;
+}
+
+main h1 {
+  margin-bottom: 10px;
+}
+
+.modal_label {
+  color: #148fd5;
+}
+
+input[type="checkbox"]:checked~.modal,
+input[type="checkbox"]:checked~.modal_background {
+  display: block;
+}
+
+.modal_background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 9998;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
+  width: 500px;
+  height: 300px;
+  background-color: #fff;
+  box-sizing: border-box;
+  z-index: 9999;
+  padding: 30px;
+}
+
+.modal input {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.modal select {
+  width: 100%;
+  font: inherit;
+}
+
+.modal .grid_container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-row: auto;
+  grid-row-gap: 20px;
+}
+
+.grid-date-field {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-date-field p {
+  margin: 0 5px;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+}
+
+.grid-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal button {
+  width: 100%;
+  font-size: 16px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  color: #ffffff;
+  background-color: #148fd5;
+  border:none;
+}
+
+.mainlist {
+  padding: 20px 50px 50px 0;
+}
+
+.mainlist input[type=checkbox] {
+  display:inline;
+  margin-right: 10px;
+}
+
+.mainlist li {
+  border-top: 1px solid #e7e7e7;
+  padding: 10px;
+  color: #060606;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainlist input:checked + span {
+  text-decoration: line-through;
+  color: #b3b3b3;
 }

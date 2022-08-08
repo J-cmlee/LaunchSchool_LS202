@@ -10,44 +10,111 @@
 <body>
   <div class="main-wrap">
     <input id="slide-sidebar" type="checkbox" role="button" />
-    <label for="slide-sidebar" id="hamburger"><span> <img src="images/hamburger.png"> </span></label>
+    <label for="slide-sidebar" id="hamburger"><span> <img src="images/hamburger.png" alt="Menu Hamburger">
+      </span></label>
     <nav class="sidebar">
-      <h1><img src="images/all-todos.png"> All Todos</h1>
+      <div class="title">
+        <img src="images/all-todos.png" alt="Todos icon">
+        <h1>All Todos</h1>
+      </div>
+
       <ul>
         <li>
           <input type='radio' value='1' name='nav_all' id='radio1' />
-          <label for='radio1'>Value 1</label>
+          <div class="row">
+            <label for='radio1'>Value 1</label>
+            <div class="list_num">2</div>
+          </div>
         </li>
         <li>
           <input type='radio' value='2' name='nav_all' id='radio2' />
-          <label for='radio2'>Value 2</label>
+          <div class="row">
+            <label for='radio2'>Value 1</label>
+            <div class="list_num">2</div>
+          </div>
         </li>
         <li>
           <input type='radio' value='3' name='nav_all' id='radio3' />
-          <label for='radio3'>Value 3</label>
+          <div class="row">
+            <label for='radio3'>Value 1</label>
+            <div class="list_num">2</div>
+          </div>
         </li>
       </ul>
 
-      <h1><img src="images/done.png">Completed</h1>
-      <ul>
+      <div class="title">
+        <img src="images/done.png" alt="Completed icon">
+        <h1>Completed</h1>
+      </div>
+      <ul class="completed">
         <li>
           <input type='radio' value='4' name='nav_all' id='radio4' />
-          <label for='radio4'>Value 1</label>
+          <div class="row">
+            <label for='radio4'>Value 1</label>
+          </div>
         </li>
         <li>
           <input type='radio' value='5' name='nav_all' id='radio5' />
-          <label for='radio5'>Value 2</label>
+          <div class="row">
+            <label for='radio5'>Value 1</label>
+          </div>
         </li>
         <li>
           <input type='radio' value='6' name='nav_all' id='radio6' />
-          <label for='radio6'>Value 3</label>
+          <div class="row">
+            <label for='radio6'>Value 1</label>
+          </div>
         </li>
       </ul>
 
 
     </nav>
     <main id="list_display">
-      <h1>My Portfolio</h1>
+      <h1>02/16</h1>
+      <input type="checkbox" id="modal">
+      <label for="modal" class="modal_label">Add new item</label>
+      <label for="modal" class="modal_background"></label>
+      <form class="modal" action="">
+        <fieldset class="grid_container">
+          <div class="grid-item grid-title"><label for="title">Title</label></div>
+          <div class="grid-item grid-title-field"><input type="text" id="title" name="title"></div>
+          <div class="grid-item grid-date"><label for="date">Due Date</label></div>
+          <div class="grid-item grid-date-field">
+            <select name="day" id="day">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <p> / </p>
+            <select name="month" id="month">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <p> / </p>
+            <select name="year" id="year">
+              <option value="1">2020</option>
+              <option value="2">2021</option>
+              <option value="3">2023</option>
+            </select>
+          </div>
+          <div class="grid-item grid-desc"><label for="description">Description</label></div>
+          <div class="grid-item grid-desc-field">
+            <textarea id="desc" name="desc" rows="6">Description</textarea>
+          </div>
+          <div class="grid-item"></div>
+          <div class="grid-item grid-btn">
+            <button>Save</button>
+            <button>Mark as Complete</button>
+          </div>
+
+        </fieldset>
+      </form>
+      <ul class="mainlist">
+        <li><label><input type="checkbox"><span>Item 1</span></label><img src="images/trash.png"></li>
+        <li><label><input type="checkbox"><span>Item 2</span></label><img src="images/trash.png"></li>
+        <li><label><input type="checkbox"><span>Item 3</span></label><img src="images/trash.png"></li>
+      </ul>
     </main>
   </div>
 </body>
